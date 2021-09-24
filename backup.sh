@@ -8,6 +8,8 @@
 # 4. back up "/boot"
 #--------------------
 
+set -euxo pipefail
+
 # clean old softwares' cache
 inst="sudo apt autoclean"
 printf "[$0] $inst\n"

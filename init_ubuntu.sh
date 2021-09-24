@@ -4,6 +4,8 @@
 # 1. 换源
 #-------------------
 
+set -euxo pipefail
+
 printf "[$0] This is a shell script to initialize a newly installed Ubuntu 20.04 in China for better experience.\n"
 
 # 换源
