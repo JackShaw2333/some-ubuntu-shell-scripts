@@ -15,18 +15,16 @@ cp ~/.zshrc ~/.zshrc.backup
 
 cat>~/.zshrc<<EOF
 source ~/antigen.zsh
-
 antigen use oh-my-zsh
 
-antigen bundle <<EOBUNDLES
-git
-command-not-found
-zsh-user/zsh-syntax-highlighting
-zsh-user/zsh-autosuggestions
-zsh-user/zsh-completions
-EOBUNDLES
+antigen bundle git
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-completions
+antigen bundle autojump
+antigen bundle command-not-found
 
-antigen theme dracula/zsh
+antigen theme ys
 
 antigen apply
 EOF
